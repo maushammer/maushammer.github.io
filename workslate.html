@@ -94,6 +94,7 @@
     <!-- Tab Content - simulator -->
     <div id="simulator_tab" class="tabcontent">
       <br>
+      <strong>Warning: this simulator has calculation errors</strong>
       <!-- The WASM will attach the canvas here (to "simulator_tab") -->
     </div>
 
@@ -146,7 +147,12 @@
       </ul> </p>
 
       <br><h2>Using the Simulator</h2>
-      <p>You can't click on the keys yet, so use these substitutions on your keyboard to control the WorkSlate:
+      <p>To enter text, you can click the on-screen keyboard:
+      <ul>
+         <li>The on/off, <strong style="bold;color:#d3c539">Shift/</strong><strong style="bold;color:#7bb35b">Lock</strong>, <strong style="bold;color:#7bb35b">Special</strong> keys are not clickable yet.
+           Use your keyboard's shift (shift-click) for <strong style="bold;color:#d3c539">Shift</strong>, or use Alt (alt-click) for <strong style="bold;color:#7bb35b">Special</strong>.</li>
+      </ul>
+      Or use your regular keyboard:
       <ul>
          <li>Press F1-F5 for the soft keys (labeled <strong style="bold;color:#7bb35b">Calc</strong>, <strong style="bold;color:#7bb35b">Finance</strong>, 
              <strong style="bold;color:#7bb35b">Memo</strong>, <strong style="bold;color:#7bb35b">Phone</strong>, and <strong style="bold;color:#7bb35b">Time</strong>)</li>
@@ -195,16 +201,16 @@
       If the simulation seems unrepsonsive, it's probably because the computer has gone to sleep
       after a few minutes of inactivity. This isn't emulated properly, so screen will still display.
       The <strong style="bold;color:#d3c539">On/Off</strong> button isn't emulated yet, so you'll have to reload the webpage & start again.<br><br>
-      The tape (load and save), serial port, and printer are not emulated yet.<br>
+      The tape (load and save), serial port, and printer are not emulated yet.  The eject button is purely mechanical.<br>
 
       <br><h2>Simulator Bugs</h2>
       <p>Two issues show up in the top status line:
         <ul>
+          <li>Math is not correct!  It's mostly right, but has errors I'm tracking down.</li>
           <li>I think the percentage number is memory usage, but obviously some calculation is not working correctly and it fluctuates.</li>
           <li>There is an unknown character displayed as a checkerboard.  This character only shows up on the simulator;
               I haven't been able to get it to display on a real machine.  I don't know what it is supposed to mean.</li>
         </ul>
-      Also, there are some screen artifacts due to the way HTML5 renders anti-aliased lines.
       </p>
 
       <br><h2>Copyright</h2>

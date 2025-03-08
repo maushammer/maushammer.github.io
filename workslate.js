@@ -21,21 +21,21 @@ function fetchBuffer(p){
 }
 function __ZN8Graphics18draw_cursor_alwaysEv(){
 	var tmp0=0,tmp1=0,tmp2=0;
-	tmp0=HEAP32[301778]|0;
-	tmp1=HEAP32[280356]|0;
-	tmp2=HEAP32[280357]|0;
-	if((HEAP32[297681]|0)!==0)if((tmp0|0)!==0){
+	tmp0=HEAP32[302072]|0;
+	tmp1=HEAP32[280650]|0;
+	tmp2=HEAP32[280651]|0;
+	if((HEAP32[297975]|0)!==0)if((tmp0|0)!==0){
 		__ZN8Graphics8drawCharEiic(tmp1,tmp2,160);
 		return;
 	}
-	__ZN8Graphics8drawCharEiic(tmp1,tmp2,HEAP8[(tmp1<<4)+tmp2+1121432>>0]|0);
+	__ZN8Graphics8drawCharEiic(tmp1,tmp2,HEAP8[(tmp1<<4)+tmp2+1122608>>0]|0);
 }
 function __ZN8Graphics8drawCharEiic(Larg0,Larg1,Larg2){
 	var tmp0=null,tmp1=null,tmp2=0,tmp3=0,tmp4=0,tmp5=0,tmp6=0,tmp7=null,tmp8=null,tmp9=-0.,tmp10=0,tmp11=0;
-	__ZN8Graphics9canvasCtxE.setTransform(3.1666666666666665,0,0,3.2890625,72,113.2890625);
+	__ZN8Graphics9canvasCtxE.setTransform(2.3333333333333335,0,0,2.375,60,91);
 	tmp7=__ZN8Graphics9canvasCtxE;
-	tmp0=1115840|0;
-	tmp1=1117945|0;
+	tmp0=1117024|0;
+	tmp1=1119125|0;
 	tmp8=_cheerpCreate_ZN6client6StringC2EPKc((Larg2<<24>-16777216?HEAP8:HEAP8),Larg2<<24>-16777216?tmp0>>0:tmp1>>0);
 	tmp7.fillStyle=tmp8;
 	tmp2=Larg1<<3;
@@ -46,7 +46,7 @@ function __ZN8Graphics8drawCharEiic(Larg0,Larg1,Larg2){
 	tmp5=__imul(Larg2&127,6)|0;
 	tmp10=0;
 	a:while(1){
-		tmp11=HEAP8[tmp10+tmp5+1115044>>0]|0;
+		tmp11=HEAP8[tmp10+tmp5+1116256>>0]|0;
 		tmp9=(+(tmp10+tmp3|0));
 		tmp6=tmp11^tmp4;
 		tmp11=0;
@@ -83,44 +83,44 @@ function _cheerpCreate_ZN6client6StringC2EPKc(Larg0,Marg0){
 }
 function __ZN8Graphics16initializeCanvasEv(){
 	var tmp0=null,tmp1=0,tmp2=null,tmp3=null,tmp4=0;
-	tmp2=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1115036>>0);
+	tmp2=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1116208>>0);
 	tmp0=document.getElementById(tmp2);
 	__ZN8Graphics12canvas_widthE=~~ +tmp0.width;
 	__ZN8Graphics13canvas_heightE=~~ +tmp0.height;
-	tmp2=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1082248>>0);
+	tmp2=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1116188>>0);
 	__ZN8Graphics6canvasE=document.getElementById(tmp2);
 	__ZN8Graphics6canvasE.width=(+(__ZN8Graphics12canvas_widthE|0));
 	__ZN8Graphics6canvasE.height=(+(__ZN8Graphics13canvas_heightE|0));
-	tmp2=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1049464>>0);
+	tmp2=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1083404>>0);
 	tmp3=document.getElementById(tmp2);
 	tmp3.appendChild(__ZN8Graphics6canvasE);
 	tmp2=__ZN8Graphics6canvasE;
-	tmp3=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1116680>>0);
+	tmp3=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1117864>>0);
 	__ZN8Graphics9canvasCtxE=tmp2.getContext(tmp3);
 	__ZN8Graphics9canvasCtxE.drawImage(tmp0,0,0);
 	tmp2=__ZN8Graphics9canvasCtxE;
-	tmp3=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1115840>>0);
+	tmp3=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1117024>>0);
 	tmp2.fillStyle=tmp3;
-	__ZN8Graphics9canvasCtxE.fillRect(72,111,874,421);
+	__ZN8Graphics9canvasCtxE.fillRect(54,83,656,320);
 	tmp4=0;
 	while(1){
 		tmp1=tmp4<<4;
-		HEAP8[tmp1+1121432>>0]=32;
-		HEAP8[tmp1+1+1121432>>0]=32;
-		HEAP8[tmp1+2+1121432>>0]=32;
-		HEAP8[tmp1+3+1121432>>0]=32;
-		HEAP8[tmp1+4+1121432>>0]=32;
-		HEAP8[tmp1+5+1121432>>0]=32;
-		HEAP8[tmp1+6+1121432>>0]=32;
-		HEAP8[tmp1+7+1121432>>0]=32;
-		HEAP8[tmp1+8+1121432>>0]=32;
-		HEAP8[tmp1+9+1121432>>0]=32;
-		HEAP8[tmp1+10+1121432>>0]=32;
-		HEAP8[tmp1+11+1121432>>0]=32;
-		HEAP8[tmp1+12+1121432>>0]=32;
-		HEAP8[tmp1+13+1121432>>0]=32;
-		HEAP8[tmp1+14+1121432>>0]=32;
-		HEAP8[tmp1+15+1121432>>0]=32;
+		HEAP8[tmp1+1122608>>0]=32;
+		HEAP8[tmp1+1+1122608>>0]=32;
+		HEAP8[tmp1+2+1122608>>0]=32;
+		HEAP8[tmp1+3+1122608>>0]=32;
+		HEAP8[tmp1+4+1122608>>0]=32;
+		HEAP8[tmp1+5+1122608>>0]=32;
+		HEAP8[tmp1+6+1122608>>0]=32;
+		HEAP8[tmp1+7+1122608>>0]=32;
+		HEAP8[tmp1+8+1122608>>0]=32;
+		HEAP8[tmp1+9+1122608>>0]=32;
+		HEAP8[tmp1+10+1122608>>0]=32;
+		HEAP8[tmp1+11+1122608>>0]=32;
+		HEAP8[tmp1+12+1122608>>0]=32;
+		HEAP8[tmp1+13+1122608>>0]=32;
+		HEAP8[tmp1+14+1122608>>0]=32;
+		HEAP8[tmp1+15+1122608>>0]=32;
 		tmp4=tmp4+1|0;
 		if((tmp4|0)!==46)continue;
 		break;
@@ -130,14 +130,17 @@ function __ZN8Graphics14init_callbacksEv(){
 	var tmp0=null,tmp1=null;
 	tmp0=__ZN8Graphics9sim_frameEv;
 	+requestAnimationFrame(tmp0);
-	tmp0=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1115812>>0);
+	tmp0=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1116216>>0);
 	tmp1=__ZN8Graphics14keyDownHandlerEPN6client13KeyboardEventE;
 	document.addEventListener(tmp0,tmp1);
-	tmp0=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1115820>>0);
+	tmp0=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1116224>>0);
 	tmp1=__ZN8Graphics12keyUpHandlerEPN6client13KeyboardEventE;
 	document.addEventListener(tmp0,tmp1);
-	tmp0=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1115828>>0);
+	tmp0=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1116232>>0);
 	tmp1=__ZN8Graphics15keyPressHandlerEPN6client13KeyboardEventE;
+	document.addEventListener(tmp0,tmp1);
+	tmp0=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1116244>>0);
+	tmp1=__ZN8Graphics16mouseDownHandlerEPN6client10MouseEventE;
 	document.addEventListener(tmp0,tmp1);
 }
 function __ZN8Graphics9sim_frameEv(){
@@ -155,21 +158,21 @@ function __ZN8Graphics9sim_frameEv(){
 		if(Lconv10-tmp6>>>0<=500)if(!(tmp7))break a;
 		__ZZN8Graphics22blink_cursor_if_neededEyE17prev_milliseconds$p0=Lconv10;
 		__ZZN8Graphics22blink_cursor_if_neededEyE17prev_milliseconds$p1=Lconv;
-		tmp6=HEAP32[301778]|0;
-		HEAP32[301778]=(tmp6|0)===0?1:0;
-		if((HEAP32[297681]|0)!==0){
-			tmp7=HEAP32[280356]|0;
-			tmp2=HEAP32[280357]|0;
+		tmp6=HEAP32[302072]|0;
+		HEAP32[302072]=(tmp6|0)===0?1:0;
+		if((HEAP32[297975]|0)!==0){
+			tmp7=HEAP32[280650]|0;
+			tmp2=HEAP32[280651]|0;
 			if((tmp6|0)===0){
 				tmp6=160;
 			}else{
-				tmp6=HEAP8[(tmp7<<4)+tmp2+1121432>>0]|0;
+				tmp6=HEAP8[(tmp7<<4)+tmp2+1122608>>0]|0;
 			}
 			__ZN8Graphics8drawCharEiic(tmp7,tmp2,tmp6);
 		}
 	}
 	Lconv=___udivti3(Lconv10,Lconv)|0;
-	Lconv10=HEAP32[280542]|0;
+	Lconv10=HEAP32[280836]|0;
 	if(((__ZZN8Graphics21advance_rtc_if_neededEyE12prev_seconds$p0|0)^Lconv|(__ZZN8Graphics21advance_rtc_if_neededEyE12prev_seconds$p1|0)^Lconv10|0)!==0){
 		__Z10rtc_updateP8timespec();
 		__ZZN8Graphics21advance_rtc_if_neededEyE12prev_seconds$p0=Lconv;
@@ -588,6 +591,43 @@ function __ZN8Graphics15keyPressHandlerEPN6client13KeyboardEventE(Larg0){
 		__Z13push_kbd_fifoj(0);
 	}
 }
+function __ZN8Graphics16mouseDownHandlerEPN6client10MouseEventE(Larg0){
+	var tmp0=-0.,tmp1=-0.,tmp2=-0.,tmp3=-0.,tmp4=0,Lkeylookup$poptgep$poptgep$poptgepsqueezed=0;
+	if(((getKeyboardActive())|0)!==0){
+		tmp0=+Larg0.offsetX;
+		tmp1=+Larg0.offsetY;
+		tmp4=0;
+		while(1){
+			if((tmp4|0)!==72){
+				Lkeylookup$poptgep$poptgep$poptgepsqueezed=(tmp4<<4)+1049312|0;
+				tmp2=tmp0-(+(HEAP32[Lkeylookup$poptgep$poptgep$poptgepsqueezed>>2]|0));
+				tmp3=tmp1-(+(HEAP32[4+Lkeylookup$poptgep$poptgep$poptgepsqueezed>>2]|0));
+				if(tmp2*tmp2+tmp3*tmp3<(+(HEAP32[8+Lkeylookup$poptgep$poptgep$poptgepsqueezed>>2]|0))){
+					Lkeylookup$poptgep$poptgep$poptgepsqueezed=HEAP32[12+Lkeylookup$poptgep$poptgep$poptgepsqueezed>>2]|0;
+				}else{
+					Lkeylookup$poptgep$poptgep$poptgepsqueezed=0;
+				}
+				if((Lkeylookup$poptgep$poptgep$poptgepsqueezed|0)===0){
+					tmp4=tmp4+1|0;
+					continue;
+				}
+				if(Larg0.shiftKey){
+					__Z13push_kbd_fifoj(65536);
+					tmp4=65536;
+				}else{
+					tmp4=0;
+				}
+				if(Larg0.altKey){
+					tmp4|=131072;
+					__Z13push_kbd_fifoj(tmp4);
+				}
+				__Z13push_kbd_fifoj(tmp4|Lkeylookup$poptgep$poptgep$poptgepsqueezed);
+				__Z13push_kbd_fifoj(0);
+			}
+			break;
+		}
+	}
+}
 function __ZL17do_syscall_writevPK5iovecl(Lios,Llen){
 	var tmp0=null,tmp0o=0,Lmask$p1$pi=0,Lbuilder$psroa$p0$p047=null,L__ret$p049=0,Li$p048=0,Lios$poptgep=0,Li15$p054=0,L$psink$pi=0,Lconv$pi=0,Lcall$pi=null;
 	if(!(__ZGVZL17do_syscall_writevPK5ioveclE4curr|0)){
@@ -654,7 +694,7 @@ function __ZL17do_syscall_writevPK5iovecl(Lios,Llen){
 	}else{
 		L__ret$p049=0;
 	}
-	Lcall$pi=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1117632>>0);
+	Lcall$pi=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1118812>>0);
 	Lbuilder$psroa$p0$p047=Lbuilder$psroa$p0$p047.split(Lcall$pi);
 	Li$p048=Lbuilder$psroa$p0$p047.length;
 	if((Li$p048|0)>1){
