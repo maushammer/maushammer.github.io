@@ -21,21 +21,21 @@ function fetchBuffer(p){
 }
 function __ZN8Graphics18draw_cursor_alwaysEv(){
 	var tmp0=0,tmp1=0,tmp2=0;
-	tmp0=HEAP32[302072]|0;
-	tmp1=HEAP32[280650]|0;
-	tmp2=HEAP32[280651]|0;
-	if((HEAP32[297975]|0)!==0)if((tmp0|0)!==0){
+	tmp0=HEAP32[280686]|0;
+	tmp1=HEAP32[280688]|0;
+	tmp2=HEAP32[280689]|0;
+	if((HEAP32[280687]|0)!==0)if((tmp0|0)!==0){
 		__ZN8Graphics8drawCharEiic(tmp1,tmp2,160);
 		return;
 	}
-	__ZN8Graphics8drawCharEiic(tmp1,tmp2,HEAP8[(tmp1<<4)+tmp2+1122608>>0]|0);
+	__ZN8Graphics8drawCharEiic(tmp1,tmp2,HEAP8[(tmp1<<4)+tmp2+1122760>>0]|0);
 }
 function __ZN8Graphics8drawCharEiic(Larg0,Larg1,Larg2){
 	var tmp0=null,tmp1=null,tmp2=0,tmp3=0,tmp4=0,tmp5=0,tmp6=0,tmp7=null,tmp8=null,tmp9=-0.,tmp10=0,tmp11=0;
 	__ZN8Graphics9canvasCtxE.setTransform(2.3333333333333335,0,0,2.375,60,91);
 	tmp7=__ZN8Graphics9canvasCtxE;
-	tmp0=1117024|0;
-	tmp1=1119125|0;
+	tmp0=1117008|0;
+	tmp1=1119232|0;
 	tmp8=_cheerpCreate_ZN6client6StringC2EPKc((Larg2<<24>-16777216?HEAP8:HEAP8),Larg2<<24>-16777216?tmp0>>0:tmp1>>0);
 	tmp7.fillStyle=tmp8;
 	tmp2=Larg1<<3;
@@ -46,7 +46,7 @@ function __ZN8Graphics8drawCharEiic(Larg0,Larg1,Larg2){
 	tmp5=__imul(Larg2&127,6)|0;
 	tmp10=0;
 	a:while(1){
-		tmp11=HEAP8[tmp10+tmp5+1116256>>0]|0;
+		tmp11=HEAP8[tmp10+tmp5+1116240>>0]|0;
 		tmp9=(+(tmp10+tmp3|0));
 		tmp6=tmp11^tmp4;
 		tmp11=0;
@@ -83,44 +83,44 @@ function _cheerpCreate_ZN6client6StringC2EPKc(Larg0,Marg0){
 }
 function __ZN8Graphics16initializeCanvasEv(){
 	var tmp0=null,tmp1=0,tmp2=null,tmp3=null,tmp4=0;
-	tmp2=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1116208>>0);
+	tmp2=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1116232>>0);
 	tmp0=document.getElementById(tmp2);
 	__ZN8Graphics12canvas_widthE=~~ +tmp0.width;
 	__ZN8Graphics13canvas_heightE=~~ +tmp0.height;
-	tmp2=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1116188>>0);
+	tmp2=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1116212>>0);
 	__ZN8Graphics6canvasE=document.getElementById(tmp2);
 	__ZN8Graphics6canvasE.width=(+(__ZN8Graphics12canvas_widthE|0));
 	__ZN8Graphics6canvasE.height=(+(__ZN8Graphics13canvas_heightE|0));
-	tmp2=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1083404>>0);
+	tmp2=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1083428>>0);
 	tmp3=document.getElementById(tmp2);
 	tmp3.appendChild(__ZN8Graphics6canvasE);
 	tmp2=__ZN8Graphics6canvasE;
-	tmp3=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1117864>>0);
+	tmp3=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1117956>>0);
 	__ZN8Graphics9canvasCtxE=tmp2.getContext(tmp3);
 	__ZN8Graphics9canvasCtxE.drawImage(tmp0,0,0);
 	tmp2=__ZN8Graphics9canvasCtxE;
-	tmp3=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1117024>>0);
+	tmp3=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1117008>>0);
 	tmp2.fillStyle=tmp3;
 	__ZN8Graphics9canvasCtxE.fillRect(54,83,656,320);
 	tmp4=0;
 	while(1){
 		tmp1=tmp4<<4;
-		HEAP8[tmp1+1122608>>0]=32;
-		HEAP8[tmp1+1+1122608>>0]=32;
-		HEAP8[tmp1+2+1122608>>0]=32;
-		HEAP8[tmp1+3+1122608>>0]=32;
-		HEAP8[tmp1+4+1122608>>0]=32;
-		HEAP8[tmp1+5+1122608>>0]=32;
-		HEAP8[tmp1+6+1122608>>0]=32;
-		HEAP8[tmp1+7+1122608>>0]=32;
-		HEAP8[tmp1+8+1122608>>0]=32;
-		HEAP8[tmp1+9+1122608>>0]=32;
-		HEAP8[tmp1+10+1122608>>0]=32;
-		HEAP8[tmp1+11+1122608>>0]=32;
-		HEAP8[tmp1+12+1122608>>0]=32;
-		HEAP8[tmp1+13+1122608>>0]=32;
-		HEAP8[tmp1+14+1122608>>0]=32;
-		HEAP8[tmp1+15+1122608>>0]=32;
+		HEAP8[tmp1+1122760>>0]=32;
+		HEAP8[tmp1+1+1122760>>0]=32;
+		HEAP8[tmp1+2+1122760>>0]=32;
+		HEAP8[tmp1+3+1122760>>0]=32;
+		HEAP8[tmp1+4+1122760>>0]=32;
+		HEAP8[tmp1+5+1122760>>0]=32;
+		HEAP8[tmp1+6+1122760>>0]=32;
+		HEAP8[tmp1+7+1122760>>0]=32;
+		HEAP8[tmp1+8+1122760>>0]=32;
+		HEAP8[tmp1+9+1122760>>0]=32;
+		HEAP8[tmp1+10+1122760>>0]=32;
+		HEAP8[tmp1+11+1122760>>0]=32;
+		HEAP8[tmp1+12+1122760>>0]=32;
+		HEAP8[tmp1+13+1122760>>0]=32;
+		HEAP8[tmp1+14+1122760>>0]=32;
+		HEAP8[tmp1+15+1122760>>0]=32;
 		tmp4=tmp4+1|0;
 		if((tmp4|0)!==46)continue;
 		break;
@@ -130,16 +130,16 @@ function __ZN8Graphics14init_callbacksEv(){
 	var tmp0=null,tmp1=null;
 	tmp0=__ZN8Graphics9sim_frameEv;
 	+requestAnimationFrame(tmp0);
-	tmp0=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1116216>>0);
+	tmp0=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1117152>>0);
 	tmp1=__ZN8Graphics14keyDownHandlerEPN6client13KeyboardEventE;
 	document.addEventListener(tmp0,tmp1);
-	tmp0=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1116224>>0);
+	tmp0=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1117160>>0);
 	tmp1=__ZN8Graphics12keyUpHandlerEPN6client13KeyboardEventE;
 	document.addEventListener(tmp0,tmp1);
-	tmp0=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1116232>>0);
+	tmp0=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1117168>>0);
 	tmp1=__ZN8Graphics15keyPressHandlerEPN6client13KeyboardEventE;
 	document.addEventListener(tmp0,tmp1);
-	tmp0=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1116244>>0);
+	tmp0=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1117180>>0);
 	tmp1=__ZN8Graphics16mouseDownHandlerEPN6client10MouseEventE;
 	document.addEventListener(tmp0,tmp1);
 }
@@ -158,21 +158,21 @@ function __ZN8Graphics9sim_frameEv(){
 		if(Lconv10-tmp6>>>0<=500)if(!(tmp7))break a;
 		__ZZN8Graphics22blink_cursor_if_neededEyE17prev_milliseconds$p0=Lconv10;
 		__ZZN8Graphics22blink_cursor_if_neededEyE17prev_milliseconds$p1=Lconv;
-		tmp6=HEAP32[302072]|0;
-		HEAP32[302072]=(tmp6|0)===0?1:0;
-		if((HEAP32[297975]|0)!==0){
-			tmp7=HEAP32[280650]|0;
-			tmp2=HEAP32[280651]|0;
+		tmp6=HEAP32[280686]|0;
+		HEAP32[280686]=(tmp6|0)===0?1:0;
+		if((HEAP32[280687]|0)!==0){
+			tmp7=HEAP32[280688]|0;
+			tmp2=HEAP32[280689]|0;
 			if((tmp6|0)===0){
 				tmp6=160;
 			}else{
-				tmp6=HEAP8[(tmp7<<4)+tmp2+1122608>>0]|0;
+				tmp6=HEAP8[(tmp7<<4)+tmp2+1122760>>0]|0;
 			}
 			__ZN8Graphics8drawCharEiic(tmp7,tmp2,tmp6);
 		}
 	}
 	Lconv=___udivti3(Lconv10,Lconv)|0;
-	Lconv10=HEAP32[280836]|0;
+	Lconv10=HEAP32[280874]|0;
 	if(((__ZZN8Graphics21advance_rtc_if_neededEyE12prev_seconds$p0|0)^Lconv|(__ZZN8Graphics21advance_rtc_if_neededEyE12prev_seconds$p1|0)^Lconv10|0)!==0){
 		__Z10rtc_updateP8timespec();
 		__ZZN8Graphics21advance_rtc_if_neededEyE12prev_seconds$p0=Lconv;
@@ -598,7 +598,7 @@ function __ZN8Graphics16mouseDownHandlerEPN6client10MouseEventE(Larg0){
 		tmp1=+Larg0.offsetY;
 		tmp4=0;
 		while(1){
-			if((tmp4|0)!==72){
+			if((tmp4|0)!==73){
 				Lkeylookup$poptgep$poptgep$poptgepsqueezed=(tmp4<<4)+1049312|0;
 				tmp2=tmp0-(+(HEAP32[Lkeylookup$poptgep$poptgep$poptgepsqueezed>>2]|0));
 				tmp3=tmp1-(+(HEAP32[4+Lkeylookup$poptgep$poptgep$poptgepsqueezed>>2]|0));
@@ -694,7 +694,7 @@ function __ZL17do_syscall_writevPK5iovecl(Lios,Llen){
 	}else{
 		L__ret$p049=0;
 	}
-	Lcall$pi=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1118812>>0);
+	Lcall$pi=_cheerpCreate_ZN6client6StringC2EPKc(HEAP8,1118828>>0);
 	Lbuilder$psroa$p0$p047=Lbuilder$psroa$p0$p047.split(Lcall$pi);
 	Li$p048=Lbuilder$psroa$p0$p047.length;
 	if((Li$p048|0)>1){

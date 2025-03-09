@@ -149,7 +149,7 @@
       <br><h2>Using the Simulator</h2>
       <p>To enter text, you can click the on-screen keyboard:
       <ul>
-         <li>The on/off, <strong style="bold;color:#d3c539">Shift/</strong><strong style="bold;color:#7bb35b">Lock</strong>, <strong style="bold;color:#7bb35b">Special</strong> keys are not clickable yet.
+         <li>The <strong style="bold;color:#d3c539">Shift/</strong><strong style="bold;color:#7bb35b">Lock</strong> and <strong style="bold;color:#7bb35b">Special</strong> keys are not clickable yet.
            Use your keyboard's shift (shift-click) for <strong style="bold;color:#d3c539">Shift</strong>, or use Alt (alt-click) for <strong style="bold;color:#7bb35b">Special</strong>.</li>
       </ul>
       Or use your regular keyboard:
@@ -198,9 +198,7 @@
         </tr>
       </table>
       </p>
-      If the simulation seems unrepsonsive, it's probably because the computer has gone to sleep
-      after a few minutes of inactivity. This isn't emulated properly, so screen will still display.
-      The <strong style="bold;color:#d3c539">On/Off</strong> button isn't emulated yet, so you'll have to reload the webpage & start again.<br><br>
+      <br>
       The tape (load and save), serial port, and printer are not emulated yet.  The eject button is purely mechanical.<br>
 
       <br><h2>Simulator Bugs</h2>
@@ -222,7 +220,7 @@
       <br>
       This is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software
       Foundation; either version 1, or (at your option) any later version. 
-      It is distributed in the hope that it will be useful, but WITHOUT ANY WARANTY; without even the implied waranty of MERCHANTABILITY or FITNESS
+      It is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
       FOR A PARTICULAR PURPOSE.  See the <a href="https://www.gnu.org/licenses/">GNU General Public License</a> for more details.</p>
     </div>
 
@@ -264,7 +262,7 @@
       the extra instructions in the 6801 and HD63B03. Next, I used a MC6800 emulator and added
       the extra instructions of the HD63B03.  Then I simultaneously disassembled the code in
       Ghidra (looking at the instructions and guessing at the functionality) while developing
-      the simulator (adding hardware emulation for all the peripherials & figuring out the custom
+      the simulator (adding hardware emulation for all the peripherals & figuring out the custom
       character font ROM).  Basically, I'd run until the processor tried to access an unknown
       register, and then I'd figure out what that register was doing (is it the LCD? Is it
       the clock?) and then implement it in my emulator.  Rinse & repeat for a few weeks.
@@ -303,6 +301,7 @@
         <br>P15 -- output, on hook. 0=off hook (active). 1=on hook
         <br>P16 -- output, originate/answer
         <br>P17 -- output, squelch transmitter. 1=txmitter in modem is off
+        <br>0x63 is stored when powering off.
         </td>
   </tr>
   <tr>
@@ -356,7 +355,11 @@
     <td>CSTAPEW1</td>
     <td>U29</td>
     <td>0x002D write-only</td>
-    <td>Custom logic. Still deciphering.</td>
+    <td>Custom logic. Still deciphering.<br>
+        Set to 0x00 at powerup, 0x41 just before powering off.<br>
+        May have something to do with audio routing because seen setting before beeping.<br>
+        bit 6 -- set high to turn power off
+    </td>
   </tr>
   <tr>
     <td>RTC (Real Time Clock)</td>
