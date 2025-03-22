@@ -208,8 +208,8 @@
 
       <p>Incorporates processor simulation code from <a href="https://github.com/jhallen/exorsim">EXORsim</a> M6800 Simulator Copyright &copy; 2011 Joseph H. Allen (GPL license).<br>
       Modifications for 6801 Copyright &copy; 2020 Joel Matthew Rees (<a href="https://osdn.net/users/reiisi/pf/exorsim6801/scm/commits/92ef8a291a6240887b19ec9117ea774aba59ea9a">exorsim6801</a>).<br>
-      Modifications for 6803 & WorkSlate emulation Copyright &copy; 2025 John Maushammer<br>
-      Made with the <a href="https://cheerp.io">Cheerp WASM compiler</a>, which made it easy to port a C program to run locally in a web browser.<br>
+      Modifications for 6803 & WorkSlate emulation Copyright &copy; 2025 John Maushammer. [Source code here.](https://github.com/maushammer/workslate-sim)<br>
+      This web version uses the <a href="https://cheerp.io">Cheerp WASM compiler</a> to run C code in a web browser.  There is also a version that runs in a terminal and includes a full debugger.<br>
       <br>
       This is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software
       Foundation; either version 1, or (at your option) any later version. 
@@ -298,14 +298,6 @@
         </td>
   </tr>
   <tr>
-    <td>LCD</td>
-    <td>CSDISP</td>
-    <td><a href="https://www.alldatasheet.com/datasheet-pdf/pdf/80248/HITACHI/HD61830A00H.html">Hitachi HD61830A00</a></td>
-    <td>0x0024 cmd reg<br>0x0025 data reg<br>
-    <td>LCD RAM must be accessed through this interface; it's not memory mapped.<br>
-        Uses a custom font ROM; if high bit is set, then font is reversed (highlighted).</td>
-  </tr>
-  <tr>
     <td>Keyboard</td>
     <td>CSKBD</td>
     <td>74C374<br>74C244</td>
@@ -316,11 +308,12 @@
       <br>so writing 0xFF is a quick way to check if any key is pressed.</td>
   </tr>
   <tr>
-    <td>DTMF dialer</td>
-    <td>CSDTMFW-</td>
-    <td><a href="https://www.alldatasheet.com/html-pdf/101830/TI/TCM5089/24/1/TCM5089.html">TCM5089N</a></td>
-    <td>0x0030 write-only</td>
-    <td>Touch tone tone generator.</td>
+    <td>LCD</td>
+    <td>CSDISP</td>
+    <td><a href="https://www.alldatasheet.com/datasheet-pdf/pdf/80248/HITACHI/HD61830A00H.html">Hitachi HD61830A00</a></td>
+    <td>0x0024 cmd reg<br>0x0025 data reg<br>
+    <td>LCD RAM must be accessed through this interface; it's not memory mapped.<br>
+        Uses a custom font ROM; if high bit is set, then font is reversed (highlighted).</td>
   </tr>
   <tr>
     <td>Tape Gate Array</td>
@@ -353,6 +346,13 @@
         May have something to do with audio routing because seen setting before beeping.<br>
         bit 6 -- set high to turn power off
     </td>
+  </tr>
+  <tr>
+    <td>DTMF dialer</td>
+    <td>CSDTMFW-</td>
+    <td><a href="https://www.alldatasheet.com/html-pdf/101830/TI/TCM5089/24/1/TCM5089.html">TCM5089N</a></td>
+    <td>0x0030 write-only</td>
+    <td>Touch tone tone generator.</td>
   </tr>
   <tr>
     <td>RTC (Real Time Clock)</td>
